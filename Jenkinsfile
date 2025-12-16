@@ -50,7 +50,7 @@ pipeline {
             }
         }
         
-       
+        /*
         stage("OWASP FS Scan") {
             steps {
                 dependencyCheck additionalArguments: '''
@@ -61,10 +61,10 @@ pipeline {
                    ''',
                 odcInstallation: 'dp-check'
 
-                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+                
             }
-        }
-
+        } 
+        */
 
         stage("Trivy File Scan") {
             steps {
